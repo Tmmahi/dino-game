@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.gameContainer {
+  background-image: url(asset/img/bg.png);
+  width: 100%;
+  height: 100vh;
+  background-size: 100vw 100vh;
+}
+.gameOver {
+  visibility: hidden;
+  background: brown;
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+.keybord img {
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.keybord h1 {
+  position: absolute;
+  right: 0;
+}
+.dino {
+  background-image: url(asset/img/dino.png);
+  width: 226px;
+  height: 113px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+.aniDino {
+  animation: dinAni 0.6s linear;
+}
+.dragan {
+  background-image: url(asset/img/dragon.png);
+  width: 159px;
+  height: 106px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+.aniDra {
+  animation: draAni 5s linear infinite;
+}
+
+@keyframes dinAni {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 350px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes draAni {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
